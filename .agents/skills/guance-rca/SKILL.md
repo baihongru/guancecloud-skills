@@ -64,8 +64,6 @@ description: 当 Codex 需要使用 owl CLI 对观测云 APM 耗时异常做根�
 
 ## 报告要求
 
-默认报告路径：调用方工作目录下的 `reports/guance-rca-<timestamp>.md`。
-
 报告应包含：
 
 - 时间范围、时区，以及所有收敛后的异常时间窗。
