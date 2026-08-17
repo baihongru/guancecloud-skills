@@ -1,0 +1,20 @@
+{
+  "series": [
+    {
+      "name": "p99_duration",
+      "tags": {
+        "service": "checkout",
+        "env": "prod"
+      },
+      "points": [
+        {"ts": 1767180000000, "value": 120},
+        {"ts": 1767181800000, "value": 500},
+        {"ts": 1767183600000, "value": 130},
+        {"ts": 1767187200000, "value": 520}
+      ]
+    }
+  ],
+  "meta": {
+    "purpose": "点数低于默认 min_points，用于验证 analysis_status=too_sparse。"
+  }
+}

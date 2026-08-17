@@ -1,0 +1,10 @@
+analysis_status: ok
+status_reason: candidate windows are suitable for automatic drilldown
+series: p99_duration env=prod service=checkout
+time: 2025-12-31 11:20:00Z -> 2025-12-31 11:43:00Z
+value: min=118.000 max=510.000 points=24
+plot :           ###     ###   
+mark :           A1      A2
+windows:
+[A1] 2025-12-31 11:30:00Z -> 2025-12-31 11:33:00Z score=64.2975 confidence=high
+[A2] 2025-12-31 11:38:00Z -> 2025-12-31 11:41:00Z score=27.804 confidence=high

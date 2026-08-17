@@ -1,0 +1,56 @@
+{
+  "success": true,
+  "request_id": "demo-request",
+  "data": {
+    "workspace": "demo",
+    "query": {
+      "dql": "T::span:(avg(duration)) [10m]",
+      "start_time": 1767180000000,
+      "end_time": 1767180600000
+    },
+    "result": {
+      "series": [
+        {
+          "name": "p99_duration",
+          "tags": {
+            "service": "checkout",
+            "env": "prod"
+          },
+          "points": [
+            [1767180000000, 120],
+            [1767180060000, 121],
+            [1767180120000, 480]
+          ]
+        }
+      ],
+      "records": [
+        {
+          "time": 1767180120000,
+          "trace_id": "trace-a",
+          "span_id": "span-root",
+          "parent_id": "0",
+          "service": "checkout",
+          "resource": "POST /orders",
+          "span_type": "entry",
+          "duration": 480,
+          "status": "ok",
+          "children": [
+            {
+              "span_id": "span-redis",
+              "parent_id": "span-root",
+              "service": "redis",
+              "base_service": "checkout",
+              "resource": "EVAL",
+              "db_host": "redis-1.prod",
+              "duration": 420,
+              "status": "ok"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "meta": {
+    "purpose": "复杂嵌套 payload，用于验证 normalize_owl_series.py --inspect-shape 的结构检查输出。"
+  }
+}

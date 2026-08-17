@@ -1,0 +1,45 @@
+{
+  "data": {
+    "items": [
+      {
+        "avg(duration)": 7912.074168885724,
+        "percentile(duration, 75)": 3224.0348999013568,
+        "percentile(duration, 90)": 10268.646965972126,
+        "percentile(duration, 99)": 117843.1252355409,
+        "time": 1779953340000
+      },
+      {
+        "avg(duration)": 8000.337131372337,
+        "percentile(duration, 75)": 3352.939723678366,
+        "percentile(duration, 90)": 10388.313987234531,
+        "percentile(duration, 99)": 116376.4615582005,
+        "time": 1779953280000
+      },
+      {
+        "avg(duration)": 10515.90354457614,
+        "percentile(duration, 75)": 3454.6264682834126,
+        "percentile(duration, 90)": 10827.108595757942,
+        "percentile(duration, 99)": 200019.87370570845,
+        "time": 1779953220000
+      },
+      {
+        "avg(duration)": 14542.297196725247,
+        "percentile(duration, 75)": 5958.659658494685,
+        "percentile(duration, 90)": 11694.35774117653,
+        "percentile(duration, 99)": 489715.8385405933,
+        "time": 1779952680000
+      },
+      {
+        "avg(duration)": 8436.795312957145,
+        "percentile(duration, 75)": 2849.650177871563,
+        "percentile(duration, 90)": 10380.098951760363,
+        "percentile(duration, 99)": 145176.52273476496,
+        "time": 1779952500000
+      }
+    ]
+  },
+  "meta": {
+    "purpose": "来自真实 owl.data.query 文件内容的耗时趋势样例，字段名保持 avg(duration) 与 percentile(duration, N)。"
+  },
+  "success": true
+}

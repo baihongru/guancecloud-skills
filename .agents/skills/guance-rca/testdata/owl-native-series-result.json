@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "result": {
+    "series": [
+      {
+        "name": "p99_duration",
+        "tags": {"service": "payment", "env": "prod"},
+        "points": [
+          [1767180000000, 110],
+          [1767180060000, 112],
+          [1767180120000, 111],
+          [1767180180000, 115]
+        ]
+      },
+      {
+        "name": "avg_duration",
+        "tags": {"service": "payment", "env": "prod"},
+        "values": [
+          {"time": "2025-12-31T09:20:00+00:00", "value": 70},
+          {"time": "2025-12-31T09:21:00+00:00", "value": 71},
+          {"time": "2025-12-31T09:22:00+00:00", "value": 70},
+          {"time": "2025-12-31T09:23:00+00:00", "value": 72}
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "purpose": "模拟 owl.data.query 已经返回时序结构的情况，同时覆盖数组点和 ISO 时间字符串点。"
+  }
+}

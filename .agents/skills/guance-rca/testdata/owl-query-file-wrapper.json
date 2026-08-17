@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "type": "data",
+  "file": {
+    "path": "guance-rca/testdata/owl-real-latency-trend-sample.json",
+    "absolutePath": "",
+    "format": "",
+    "size": 1234
+  }
+}

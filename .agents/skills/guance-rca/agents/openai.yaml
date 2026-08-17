@@ -1,0 +1,4 @@
+interface:
+  display_name: "Guance Latency RCA"
+  short_description: "用 owl 分析观测云 APM 耗时异常根因定位与报告"
+  default_prompt: "Use $guance-rca to analyze an APM latency spike in Guance with owl and produce an evidence-based RCA report."

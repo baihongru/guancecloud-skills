@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "data": {
+    "columns": [
+      "time",
+      "service",
+      "env",
+      "avg_duration",
+      "p99_duration",
+      "request_count",
+      "error_count",
+      "status_code"
+    ],
+    "rows": [
+      [1767180000000, "checkout", "prod", 80, 120, 220, 0, 200],
+      [1767180060000, "checkout", "prod", 81, 121, 218, 0, 200],
+      [1767180120000, "checkout", "prod", 80, 119, 224, 0, 200],
+      [1767180180000, "checkout", "prod", 95, 460, 221, 3, 504],
+      [1767180000000, "payment", "prod", 70, 110, 180, 0, 200],
+      [1767180060000, "payment", "prod", 71, 112, 181, 0, 200],
+      [1767180120000, "payment", "prod", 70, 111, 179, 0, 200],
+      [1767180180000, "payment", "prod", 72, 115, 180, 0, 200]
+    ]
+  },
+  "meta": {
+    "purpose": "模拟 owl.data.query 返回 columns/rows 表格。status_code 会被 normalize_owl_series.py 默认跳过，service/env 应用 --tag-field 保留为 tags。"
+  }
+}
