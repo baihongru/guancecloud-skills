@@ -13,7 +13,6 @@ description: 当 Codex 需要使用 owl CLI 对观测云 APM 耗时异常做根�
 - 在开始 RCA 前，先阅读 `references/latency-rca-workflow.md` 和 `references/query-playbook.md`。
 - 在分析完整 span 样本前，必须阅读 `references/trace-field-guide.md`。
 - 在选择跨域求证路径前，阅读 `references/span-evidence-guide.md`。
-- 将 `耗时异常上升分析最佳实践.pdf` 作为方法论来源；只有当引用资料缺少细节时，才从 PDF 中加载或抽取内容。
 
 ## 硬性规则
 
